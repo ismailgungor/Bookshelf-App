@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+                                   xmlns:app="http://schemas.android.com/apk/res-auto"
+                                   android:layout_width="match_parent"
+                                   android:layout_height="wrap_content"
+                                   android:layout_marginLeft="@dimen/dp16"
+                                   android:layout_marginTop="@dimen/dp8"
+                                   android:layout_marginBottom="@dimen/dp8"
+                                   android:layout_marginRight="@dimen/dp16"
+                                   android:orientation="vertical"
+                                   app:cardCornerRadius="5dp"
+                                   app:cardElevation="3dp"
+                                   app:cardUseCompatPadding="false">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/dp10"
+        android:paddingStart="@dimen/dp10"
+        android:paddingRight="@dimen/dp5"
+        android:paddingEnd="@dimen/dp5">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp5"
+            android:layout_marginRight="5dp"
+            android:layout_marginBottom="@dimen/dp5"
+            android:layout_toStartOf="@id/tv_rate"
+            android:layout_toLeftOf="@id/tv_rate"
+            android:orientation="vertical">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Beyoğlunun En Güzel Abisi"
+                android:textColor="@color/default_text_color"
+                android:textSize="@dimen/text_normal"
+                android:textStyle="bold"
+                android:textAllCaps="true"/>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_author"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ahmet Ümit"
+                android:textSize="@dimen/text_small"
+                android:layout_marginTop="@dimen/dp5"/>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/text_small"
+                android:text="20 TL"/>
+
+        </LinearLayout>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_rate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_toStartOf="@id/rl_mode"
+            android:layout_toLeftOf="@id/rl_mode"
+            android:background="@drawable/rate_text_bg"
+            android:padding="5dp"
+            android:text="3.5"
+            android:textColor="@color/white"
+            android:textSize="13sp"
+            android:textStyle="bold"/>
+
+        <RelativeLayout
+            android:id="@+id/rl_mode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:gravity="center">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/iv_edit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:src="@drawable/ic_edit_24"/>
+
+
+            <androidx.appcompat.widget.AppCompatCheckBox
+                android:id="@+id/cb_book"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
+
+        </RelativeLayout>
+
+
+
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

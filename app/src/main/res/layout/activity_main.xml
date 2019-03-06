@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@drawable/main_bg"
+              android:orientation="vertical"
+              tools:context=".mainactivity.MainActivity">
+
+    <androidx.appcompat.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="?actionBarSize"
+            android:layout_marginTop="@dimen/toolbar_margin_top"
+            android:elevation="@dimen/toolbar_elevation"
+            app:contentInsetStart="0dp">
+
+        <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/iv_back"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/toolbar_icon_margin_side"
+                    android:layout_marginLeft="@dimen/toolbar_icon_margin_side"
+                    android:src="@drawable/ic_arrow_back_white_24dp"/>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tv_selected"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/toolbar_icon_margin_side"
+                    android:layout_marginLeft="@dimen/toolbar_icon_margin_side"
+                    android:layout_toEndOf="@id/iv_back"
+                    android:layout_toRightOf="@id/iv_back"
+                    android:includeFontPadding="false"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_x_large"
+                    android:textStyle="bold"/>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tv_app_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:includeFontPadding="false"
+                    android:text="@string/app_name"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_x_large"
+                    android:textStyle="bold"/>
+
+            <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/iv_remove"
+                    android:layout_width="@dimen/small_icon_size"
+                    android:layout_height="@dimen/small_icon_size"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginEnd="@dimen/toolbar_icon_margin_side"
+                    android:layout_marginRight="@dimen/toolbar_icon_margin_side"
+                    android:src="@drawable/ic_delete_36"
+                    android:tint="@color/white"/>
+
+            <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/iv_check"
+                    android:layout_width="@dimen/small_icon_size"
+                    android:layout_height="@dimen/small_icon_size"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginEnd="@dimen/toolbar_icon_margin_side"
+                    android:layout_marginRight="@dimen/toolbar_icon_margin_side"
+                    android:src="@drawable/ic_check_white_36dp"
+                    android:tint="@color/white"/>
+
+        </RelativeLayout>
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <ProgressBar
+                android:id="@+id/progress_bar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/progress_bar_margin_top"
+                android:indeterminate="true"/>
+
+        <LinearLayout
+                android:id="@+id/ll_empty_list"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:orientation="vertical">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:src="@drawable/ic_books_stack"/>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tv_empty_list"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/empty_text_padding"
+                    android:text="@string/empty_book_list_message"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_large"
+                    android:textStyle="bold"/>
+        </LinearLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_book_list"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+
+
+        <com.github.clans.fab.FloatingActionButton
+                android:id="@+id/fab_add_book"
+                android:layout_width="@dimen/fab_size_normal"
+                android:layout_height="@dimen/fab_size_normal"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginEnd="@dimen/fab_margin"
+                android:layout_marginRight="@dimen/fab_margin"
+                android:layout_marginBottom="@dimen/fab_margin"
+                android:src="@drawable/ic_add_book"
+                android:transitionName="fab"
+                app:fab_colorNormal="@color/pigment_green"
+                app:fab_colorPressed="@color/pigment_green"
+                app:fab_progress_color="@color/spring_green"
+                app:fab_showShadow="true"
+                tools:ignore="UnusedAttribute"/>
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Text Size -->
+    <dimen name="text_x_small">12sp</dimen>
+    <dimen name="text_small">13sp</dimen>
+    <dimen name="text_normal">15sp</dimen>
+    <dimen name="text_large">18sp</dimen>
+    <dimen name="text_x_large">20sp</dimen>
+    <dimen name="text_main_header">36sp</dimen>
+
+    <dimen name="dp2">2dp</dimen>
+    <dimen name="dp5">5dp</dimen>
+    <dimen name="dp8">8dp</dimen>
+    <dimen name="dp10">10dp</dimen>
+    <dimen name="dp12">12dp</dimen>
+    <dimen name="dp16">16dp</dimen>
+    <dimen name="dp18">18dp</dimen>
+    <dimen name="dp20">20dp</dimen>
+
+    <dimen name="normal_border">2dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="fab_size">56dp</dimen>
+    <dimen name="tag_item_margin">5dp</dimen>
+    <dimen name="snack_bar_corner_radius">4dp</dimen>
+    <dimen name="progress_bar_size">16dp</dimen>
+    <dimen name="toolbar_elevation">3dp</dimen>
+    <dimen name="category_item_tag_radius">18dp</dimen>
+
+    <dimen name="small_icon_size">24dp</dimen>
+    <dimen name="toolbar_icon_margin_side">16dp</dimen>
+    <dimen name="et_add_book_radius">5dp</dimen>
+    <dimen name="et_add_book_padding">10dp</dimen>
+    <dimen name="rate_text_radius">5dp</dimen>
+    <dimen name="empty_text_padding">10dp</dimen>
+    <dimen name="progress_bar_margin_top">10dp</dimen>
+    <dimen name="toolbar_margin_top">16dp</dimen>
+    <dimen name="add_category_icon_size">30dp</dimen>
+    <dimen name="layout_normal_padding">20dp</dimen>
+    <dimen name="book_text_margin_side">5dp</dimen>
+    <dimen name="book_edit_text_margin_top">5dp</dimen>
+    <dimen name="book_section_margin_top">12dp</dimen>
+
+</resources>

@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:id="@+id/main_wrapper"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/main_bg"
+                android:orientation="vertical">
+
+
+    <LinearLayout
+            android:id="@+id/my_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:visibility="invisible"
+            android:background="#fafafa">
+
+        <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+
+                <androidx.appcompat.widget.Toolbar
+                        android:layout_width="match_parent"
+                        android:layout_height="?actionBarSize"
+                        android:layout_marginTop="@dimen/toolbar_margin_top"
+                        android:elevation="@dimen/toolbar_elevation"
+                        app:contentInsetStart="0dp">
+
+                    <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                        <androidx.appcompat.widget.AppCompatImageView
+                                android:id="@+id/iv_back"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_marginStart="@dimen/toolbar_icon_margin_side"
+                                android:layout_marginLeft="@dimen/toolbar_icon_margin_side"
+                                android:src="@drawable/ic_arrow_back_white_24dp"
+                                android:tint="@color/main_gradient_end"/>
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                                android:id="@+id/tv_toolbar_title"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:text="@string/add_book"
+                                android:textColor="@color/main_gradient_end"
+                                android:textSize="@dimen/text_x_large"
+                                android:textStyle="bold"/>
+
+                        <androidx.appcompat.widget.AppCompatImageView
+                                android:id="@+id/iv_save"
+                                android:layout_width="@dimen/small_icon_size"
+                                android:layout_height="@dimen/small_icon_size"
+                                android:layout_alignParentEnd="true"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerVertical="true"
+                                android:layout_marginEnd="@dimen/toolbar_icon_margin_side"
+                                android:layout_marginRight="@dimen/toolbar_icon_margin_side"
+                                android:src="@drawable/ic_check_white_36dp"
+                                android:tint="@color/main_gradient_end"/>
+
+                    </RelativeLayout>
+
+                </androidx.appcompat.widget.Toolbar>
+
+
+                <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:padding="@dimen/layout_normal_padding">
+
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/book_text_margin_side"
+                            android:layout_marginLeft="@dimen/book_text_margin_side"
+                            android:text="@string/name"
+                            android:textColor="@color/main_gradient_end"
+                            android:textSize="@dimen/text_small"
+                            android:textStyle="bold"/>
+
+                    <androidx.appcompat.widget.AppCompatEditText
+                            android:id="@+id/et_name"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/book_edit_text_margin_top"
+                            android:background="@drawable/et_add_book_bg"
+                            android:inputType="text"
+                            android:textSize="@dimen/text_normal"/>
+
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/book_text_margin_side"
+                            android:layout_marginLeft="@dimen/book_text_margin_side"
+                            android:layout_marginTop="@dimen/book_section_margin_top"
+                            android:text="@string/author"
+                            android:textColor="@color/main_gradient_end"
+                            android:textSize="@dimen/text_small"
+                            android:textStyle="bold"/>
+
+                    <androidx.appcompat.widget.AppCompatEditText
+                            android:id="@+id/et_author"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/book_edit_text_margin_top"
+                            android:background="@drawable/et_add_book_bg"
+                            android:inputType="text"
+                            android:textSize="@dimen/text_normal"
+
+                    />
+
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/book_text_margin_side"
+                            android:layout_marginLeft="@dimen/book_text_margin_side"
+                            android:layout_marginTop="@dimen/book_section_margin_top"
+                            android:text="@string/publish_year"
+                            android:textColor="@color/main_gradient_end"
+                            android:textSize="@dimen/text_small"
+                            android:textStyle="bold"/>
+
+                    <androidx.appcompat.widget.AppCompatEditText
+                            android:id="@+id/et_publish_year"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/book_edit_text_margin_top"
+                            android:background="@drawable/et_add_book_bg"
+                            android:hint="@string/publish_year_hint"
+                            android:inputType="number"
+                            android:textSize="@dimen/text_normal"/>
+
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/book_text_margin_side"
+                            android:layout_marginLeft="@dimen/book_text_margin_side"
+                            android:layout_marginTop="@dimen/book_section_margin_top"
+                            android:text="@string/price"
+                            android:textColor="@color/main_gradient_end"
+                            android:textSize="@dimen/text_small"
+                            android:textStyle="bold"/>
+
+                    <androidx.appcompat.widget.AppCompatEditText
+                            android:id="@+id/et_price"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/book_edit_text_margin_top"
+                            android:background="@drawable/et_add_book_bg"
+                            android:inputType="numberDecimal"
+                            android:textSize="@dimen/text_normal"/>
+
+
+                    <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/dp16">
+
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_marginStart="@dimen/book_text_margin_side"
+                                android:layout_marginLeft="@dimen/book_text_margin_side"
+                                android:text="@string/rate"
+                                android:textColor="@color/main_gradient_end"
+                                android:textSize="@dimen/text_small"
+                                android:textStyle="bold"/>
+
+                        <RatingBar
+                                android:id="@+id/rating_bar"
+                                style="@style/Widget.AppCompat.RatingBar.Small"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentEnd="true"
+                                android:layout_alignParentRight="true"
+                                android:layout_marginTop="@dimen/book_edit_text_margin_top"
+                                android:isIndicator="false"
+                                android:theme="@style/RatingBar"
+                                android:rating="3"/>
+
+                    </RelativeLayout>
+
+                    <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/dp16"
+                            android:orientation="horizontal">
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="@dimen/book_text_margin_side"
+                                android:layout_marginLeft="@dimen/book_text_margin_side"
+                                android:layout_marginTop="@dimen/book_edit_text_margin_top"
+                                android:layout_weight="1"
+                                android:text="@string/categories"
+                                android:textColor="@color/main_gradient_end"
+                                android:textSize="@dimen/text_small"
+                                android:textStyle="bold"/>
+
+
+                        <LinearLayout
+                                android:id="@+id/ll_categories"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="3"
+                                android:gravity="end"
+                                android:orientation="vertical">
+
+                            <androidx.appcompat.widget.AppCompatImageView
+                                    android:id="@+id/iv_add_category"
+                                    android:layout_width="@dimen/add_category_icon_size"
+                                    android:layout_height="@dimen/add_category_icon_size"
+                                    android:src="@drawable/ic_add_black_24dp"
+                                    android:tint="@color/main_gradient_end"/>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </ScrollView>
+
+    </LinearLayout>
+
+
+    <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/fab_add_book"
+            android:layout_width="@dimen/fab_size_normal"
+            android:layout_height="@dimen/fab_size_normal"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginEnd="@dimen/fab_margin"
+            android:layout_marginRight="@dimen/fab_margin"
+            android:layout_marginBottom="@dimen/fab_margin"
+            android:src="@drawable/ic_add_book"
+            android:transitionName="fab"
+            app:fab_colorNormal="@color/pigment_green"
+            app:fab_colorPressed="@color/pigment_green"
+            app:fab_showShadow="true"
+            tools:ignore="UnusedAttribute"/>
+
+
+</RelativeLayout>

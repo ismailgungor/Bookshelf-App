@@ -1,0 +1,39 @@
+<resources>
+    <string name="app_name">Bookshelf</string>
+    <string name="no_result_message">There is no result.</string>
+    <string name="empty_book_list_message">No registered books found</string>
+    <string name="enter_category_name">Enter a category name</string>
+    <string name="name">Name</string>
+    <string name="author">Author</string>
+    <string name="publish_year">Publish Year</string>
+    <string name="price">Price</string>
+    <string name="rate">Rate</string>
+    <string name="categories">Categories</string>
+    <string name="add_book">Add Book</string>
+    <string name="edit_book">Edit Book</string>
+    <string name="toolbar_selected_text">%1$d selected</string>
+    <string name="publish_year_hint">Example: 2002</string>
+    <string name="menu_add">Add</string>
+
+    <!-- Successful Message -->
+    <!-- Start -->
+    <string name="adding_book_was_successful">Adding book process was successfully</string>
+    <string name="editing_book_was_successful">Editing book process was successfully</string>
+    <string name="deleting_book_was_successful">Deleting process was successfully</string>
+    <!-- End -->
+
+    <!-- Error Message -->
+    <!-- Start -->
+    <string name="unknown_error">An unknown error has occurred. Please try again later.</string>
+    <string name="missing_name">Please enter name of book</string>
+    <string name="missing_author">Please enter author of book</string>
+    <string name="missing_price">Please enter price of book</string>
+    <string name="missing_publish_year">Please enter publish year of book</string>
+    <string name="missing_category">Please choose at least one category of book</string>
+    <string name="adding_book_was_failed">There was an error while adding the book</string>
+    <string name="editing_book_was_failed">There was an error while editing the book</string>
+    <string name="deleting_book_was_failed">There was an error during deleting process</string>
+    <!-- End -->
+
+
+</resources>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="default_text_color">#525252</color>
+    <color name="gainsboro">#E0E0E0</color>
+    <color name="snack_bar_background_color">@color/main_gradient_end</color>
+    <color name="main_gradient_end">#272931</color>
+    <color name="main_gradient_start">#1E1F23</color>
+    <color name="pigment_green">#1AA457</color>
+    <color name="spring_green">#00F87A</color>
+    <color name="nobel">#9E9E9E</color>
+    <color name="white_smoke">#F5F5F5</color>
+    <color name="whisper">#EEEEEE</color>
+    <color name="fern">#66BB6A</color>
+</resources>
