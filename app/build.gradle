@@ -9,15 +9,6 @@ apply plugin: 'kotlin-kapt'
 
 android {
 
-    // Configs for build with assembleRelease command
-    signingConfigs {
-        release {
-            keyAlias 'keyAlias'
-            keyPassword 'keyPassword'
-            storeFile file('storeFile')
-            storePassword 'storePassword'
-        }
-    }
     compileSdkVersion 28
     defaultConfig {
         applicationId "com.kekyazilim.bookshelf_app_with_room_mvp_rx_kotlin"
@@ -32,8 +23,6 @@ android {
         release {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
-            signingConfig signingConfigs.release
-
         }
     }
 }
