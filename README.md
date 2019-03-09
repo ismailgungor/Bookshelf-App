@@ -6,6 +6,12 @@
 <b>Bookshelf-App</b>
 </p>
 
+
+<p align="center">
+<a href="https://play.google.com/store/apps/details?id=com.kekyazilim.bookshelf_app_with_room_mvp_rx_kotlin&hl=tr">See on Google Play</a>
+</p>
+
+
 This is a sample app which I used some features.
 
 ![Eg1](art/eg1.png) ![Eg2](art/eg2.png) ![Eg3](art/e3.png) ![Eg4](art/e4.png) 
