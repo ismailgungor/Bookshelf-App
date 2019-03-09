@@ -17,7 +17,7 @@ Activity Transition | Multi Select
 
 
 # Features
-1. [MVP Design Pattern](https://github.com/ismailgungor/Bookshelf-App/#gradle-dependency)
+1. [MVP Design Pattern](https://github.com/ismailgungor/Bookshelf-App/#mvp-design-pattern)
 2. [Room Database](https://github.com/ismailgungor/Bookshelf-App/#room-database)
 3. [Dagger2](https://github.com/ismailgungor/Bookshelf-App/#dagger2)
 4. [RxJava](https://github.com/ismailgungor/Bookshelf-App/#rxjava)
