@@ -15,7 +15,7 @@ import androidx.appcompat.widget.AppCompatTextView
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.github.clans.fab.FloatingActionButton
-import com.kekyazilim.bookshelf.R
+import com.kekyazilim.bookshelf.android.R
 import com.kekyazilim.bookshelf.app.AppModule
 import com.kekyazilim.bookshelf.databaseprocess.table.BookTable
 import com.kekyazilim.bookshelf.rvadapter.BookListAdapter

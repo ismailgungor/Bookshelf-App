@@ -3,7 +3,7 @@ package com.kekyazilim.bookshelf.databaseprocess.dao
 import androidx.room.Dao
 import androidx.room.Delete
 import androidx.room.Insert
-import androidx.room.OnConflictStrategy.REPLACE
+import androidx.room.OnConflictStrategy.Companion.REPLACE
 import androidx.room.Query
 import com.kekyazilim.bookshelf.databaseprocess.DatabaseQueries
 import com.kekyazilim.bookshelf.databaseprocess.table.BookTable

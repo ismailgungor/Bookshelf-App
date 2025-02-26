@@ -8,7 +8,7 @@
 
 
 <p align="center">
-<a href="https://play.google.com/store/apps/details?id=com.kekyazilim.bookshelf_app_with_room_mvp_rx_kotlin&hl=tr">See on Google Play</a>
+<a href="https://play.google.com/store/apps/details?id=com.kekyazilim.bookshelf_app&hl=tr">See on Google Play</a>
 </p>
 
 

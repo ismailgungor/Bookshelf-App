@@ -7,7 +7,7 @@ import android.view.ViewGroup
 import androidx.core.content.ContextCompat
 import androidx.core.view.ViewCompat
 import com.google.android.material.snackbar.Snackbar
-import com.kekyazilim.bookshelf.R
+import com.kekyazilim.bookshelf.android.R
 
 class SnackbarHelper(context: Context) {
 

@@ -2,17 +2,12 @@ package com.kekyazilim.bookshelf.rvadapter
 
 import android.content.Context
 import android.view.LayoutInflater
-import android.view.View
 import android.view.ViewGroup
-import android.view.animation.Animation
-import android.view.animation.AnimationUtils
 import androidx.recyclerview.widget.RecyclerView
-import com.kekyazilim.bookshelf.R
+import com.kekyazilim.bookshelf.android.R
 import com.kekyazilim.bookshelf.databaseprocess.table.BookTable
-import com.kekyazilim.bookshelf.model.BookModel
 import com.kekyazilim.bookshelf.util.itemclick.IListItemClick
 import com.kekyazilim.bookshelf.viewholder.BookListItemViewHoler
-import kotlinx.android.synthetic.main.item_book.view.*
 
 class BookListAdapter(
 		context: Context,

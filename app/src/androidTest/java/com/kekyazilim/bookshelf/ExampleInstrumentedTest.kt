@@ -20,6 +20,6 @@ class ExampleInstrumentedTest {
     fun useAppContext() {
         // Context of the app under test.
         val appContext = ApplicationProvider.getApplicationContext<Context>()
-        assertEquals("com.kekyazilim.bookshelf_app_with_room_mvp_rx_kotlin", appContext.packageName)
+        assertEquals("com.kekyazilim.bookshelf_app", appContext.packageName)
     }
 }

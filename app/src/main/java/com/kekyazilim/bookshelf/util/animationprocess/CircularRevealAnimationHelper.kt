@@ -37,7 +37,7 @@ class CircularRevealAnimationHelper {
         }
 
         anim?.addListener(object : AnimatorListenerAdapter() {
-            override fun onAnimationEnd(animation: Animator?) {
+            override fun onAnimationEnd(animation: Animator) {
                 super.onAnimationEnd(animation)
                 animationCallback.onAnimationEnd(animation)
             }

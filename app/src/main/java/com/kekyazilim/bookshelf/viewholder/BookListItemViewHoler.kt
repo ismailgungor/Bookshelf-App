@@ -6,7 +6,7 @@ import androidx.appcompat.widget.AppCompatCheckBox
 import androidx.appcompat.widget.AppCompatImageView
 import androidx.appcompat.widget.AppCompatTextView
 import androidx.recyclerview.widget.RecyclerView
-import com.kekyazilim.bookshelf.R
+import com.kekyazilim.bookshelf.android.R
 
 class BookListItemViewHoler(itemView: View) : RecyclerView.ViewHolder(itemView) {
 

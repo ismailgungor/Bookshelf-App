@@ -5,7 +5,6 @@ import android.app.Activity
 import android.content.Intent
 import android.os.Bundle
 import android.view.View
-import com.kekyazilim.bookshelf.R
 import com.kekyazilim.bookshelf.app.AppModule
 import com.kekyazilim.bookshelf.databaseprocess.AppRoomDatabaseModule
 import com.kekyazilim.bookshelf.databaseprocess.table.CategoryTable
@@ -25,6 +24,7 @@ import androidx.appcompat.widget.AppCompatEditText
 import androidx.appcompat.widget.AppCompatImageView
 import androidx.appcompat.widget.AppCompatTextView
 import com.github.clans.fab.FloatingActionButton
+import com.kekyazilim.bookshelf.android.R
 import com.kekyazilim.bookshelf.util.bookprocess.BookProcessModule
 import com.kekyazilim.bookshelf.util.categorybookjoinprocess.CategoryBookJoinModule
 import com.kekyazilim.bookshelf.util.snackbar.SnackbarHelper

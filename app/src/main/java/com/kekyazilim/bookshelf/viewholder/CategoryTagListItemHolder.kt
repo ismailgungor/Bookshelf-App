@@ -4,7 +4,7 @@ package com.kekyazilim.bookshelf.viewholder
 import android.view.View
 import androidx.appcompat.widget.AppCompatTextView
 import androidx.recyclerview.widget.RecyclerView
-import com.kekyazilim.bookshelf.R
+import com.kekyazilim.bookshelf.android.R
 
 class CategoryTagListItemHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
 

@@ -10,7 +10,7 @@ import androidx.appcompat.widget.AppCompatTextView
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.afollestad.materialdialogs.MaterialDialog
-import com.kekyazilim.bookshelf.R
+import com.kekyazilim.bookshelf.android.R
 import com.kekyazilim.bookshelf.databaseprocess.table.CategoryTable
 import com.kekyazilim.bookshelf.rvadapter.CategoryTagListAdapter
 import com.kekyazilim.bookshelf.util.customdialog.IBaseCustomDialogHelper

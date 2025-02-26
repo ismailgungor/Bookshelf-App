@@ -1,7 +1,7 @@
 package com.kekyazilim.bookshelf.databaseprocess.dao
 
 import androidx.room.*
-import androidx.room.OnConflictStrategy.REPLACE
+import androidx.room.OnConflictStrategy.Companion.REPLACE
 import com.kekyazilim.bookshelf.databaseprocess.DatabaseQueries
 import com.kekyazilim.bookshelf.databaseprocess.table.BookTable
 import io.reactivex.Completable
@@ -17,7 +17,7 @@ interface BookDao {
     @Insert(onConflict = REPLACE)
     fun insert(bookTable: BookTable): Single<Long>
 
-    @Insert(onConflict = OnConflictStrategy.REPLACE)
+    @Insert(onConflict = REPLACE)
     fun insertAll(bookTableList: List<BookTable>)
 
     @Update

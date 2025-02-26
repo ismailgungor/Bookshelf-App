@@ -43,4 +43,6 @@ captures/
 apk/*
 release/*
 *.aab
-
+#
+*.jks
+release/info.txt

@@ -3,7 +3,7 @@ package com.kekyazilim.bookshelf.splashactivity
 import android.os.Bundle
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
-import com.kekyazilim.bookshelf.R
+import com.kekyazilim.bookshelf.android.R
 import com.kekyazilim.bookshelf.app.AppModule
 import com.kekyazilim.bookshelf.databaseprocess.AppRoomDatabaseModule
 import com.kekyazilim.bookshelf.util.categoryprocess.CategoryProcessModule

@@ -4,7 +4,7 @@ import android.content.Context
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
-import com.kekyazilim.bookshelf.R
+import com.kekyazilim.bookshelf.android.R
 import com.kekyazilim.bookshelf.databaseprocess.table.CategoryTable
 import com.kekyazilim.bookshelf.viewholder.CategoryTagListItemHolder
 import io.reactivex.subjects.PublishSubject
