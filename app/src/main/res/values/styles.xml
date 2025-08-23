@@ -30,7 +30,7 @@
 
     <style name="RatingBar" parent="Theme.AppCompat">
         <item name="colorControlNormal">@color/gainsboro</item>
-        <item name="colorControlActivated">@color/main_gradient_end</item>
+        <item name="colorControlActivated">@color/pigment_green</item>
     </style>
 
 </resources>
